@@ -41,7 +41,7 @@ const routes = {
 
 const locationHandler = async () => {
     let location = window.location.hash.replace("#", "");
-    if (location.length == 0) {
+    if (location.length === 0) {
         location = "/";
     }
 
