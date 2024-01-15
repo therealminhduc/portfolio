@@ -8,6 +8,8 @@ export class BentoGridComponent {
 
     constructor() {
         this.container = createContainerDiv('bento');
+
+        this.addItem();
     }
 
     public addItem() {
