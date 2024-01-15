@@ -1,13 +1,12 @@
 import '../../../style.css'
 import './CursorComponent.css'
-import {renderElement} from "../utils/utils.ts";
+import {createContainerDiv, renderElement} from "../utils/utils.ts";
 
 export class CursorComponent {
     private readonly container: HTMLDivElement;
 
     constructor() {
-        this.container = document.createElement('div');
-        this.container.className = 'cursor';
+        this.container = createContainerDiv('cursor');
     }
 
     public render(parentElement: HTMLElement): void {

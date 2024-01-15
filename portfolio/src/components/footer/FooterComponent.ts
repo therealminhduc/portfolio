@@ -1,22 +1,19 @@
 import '../../../style.css'
 import './FooterComponent.css'
-import {createButton, renderElement} from "../../common/utils/utils.ts";
+import {createButton, createContainerDiv, renderElement} from "../../common/utils/utils.ts";
 
 export class FooterComponent {
     private readonly container: HTMLDivElement;
 
     constructor() {
-        this.container = document.createElement('div');
-        this.container.className = 'footer';
+        this.container = createContainerDiv('footer');
 
         /// Social media buttons container
         const socialContainer = document.createElement('div');
 
         /// Social media buttons
-        const gitHubButton = createButton('GitHub');
-        const linkedInButton = createButton('LinkedIn');
-        gitHubButton.className = 'button';
-        linkedInButton.className = 'button';
+        const gitHubButton = createButton('button', 'GitHub');
+        const linkedInButton = createButton('button', 'LinkedIn');
 
         socialContainer.appendChild(gitHubButton);
         socialContainer.appendChild(linkedInButton);

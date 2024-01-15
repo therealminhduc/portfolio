@@ -1,29 +1,25 @@
 import '../../../style.css'
 import './HeaderComponent.css'
-import {createButton, renderElement} from "../../common/utils/utils.ts";
+import {createButton, createContainerDiv, renderElement} from "../../common/utils/utils.ts";
 
 export class HeaderComponent {
     private readonly container: HTMLDivElement;
 
     constructor() {
-        this.container = document.createElement('div');
-        this.container.className = 'header';
+        this.container = createContainerDiv('header');
 
         /// Title (mynkie)
         const titleContainer = document.createElement('div');
 
-        const titleButton = createButton('mynkie');
-        titleButton.className = 'title';
+        const titleButton = createButton('title', 'mynkie');
 
         titleContainer.appendChild(titleButton)
 
         /// Buttons (About me & CV)
         const buttonsContainer = document.createElement('div');
 
-        const aboutMeButton = createButton('About me');
-        const cvButton = createButton('CV');
-        aboutMeButton.className = 'button';
-        cvButton.className = 'button';
+        const aboutMeButton = createButton('button', 'About me');
+        const cvButton = createButton('button', 'CV');
 
         buttonsContainer.appendChild(aboutMeButton);
         buttonsContainer.appendChild(cvButton);
