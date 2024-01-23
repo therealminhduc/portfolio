@@ -33,6 +33,3 @@ export class HeaderComponent {
         renderElement(this.container, parentElement);
     }
 }
-
-// const headerComponent = new HeaderComponent();
-// headerComponent.render(document.querySelector<HTMLDivElement>('#app')!);

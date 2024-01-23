@@ -18,9 +18,21 @@ export function createButton(className: string, label: string): HTMLButtonElemen
     return button;
 }
 
-export function createSpacer(height: string): HTMLDivElement {
+export function createBentoGridItem(className: string, textContent: string, imageSource: string) {
+    const gridItem = document.createElement('div');
+    gridItem.className = className;
+    gridItem.textContent = textContent;
+
+    const absoluteImagePath = new URL(imageSource, import.meta.url).href;
+
+    gridItem.style.backgroundImage = `url(${absoluteImagePath})`;
+    return gridItem;
+}
+
+export function createSpacer(height: string, width: string): HTMLDivElement {
     const spacer = document.createElement('div');
     spacer.style.height = height;
+    spacer.style.width = width;
     return spacer;
 }
 

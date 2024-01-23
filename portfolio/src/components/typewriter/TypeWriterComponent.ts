@@ -13,9 +13,9 @@ export class TypeWriterComponent {
 
         const introduction = createTextDiv('typewriter-text', this.greetings[this.currentGreetingIndex] + ",");
         const myName = createTextDiv('myName', "i'm minhduc.");
-        const spacer = createSpacer('70px');
-        const whoami1 = createTextDiv('whoami', "i'm a student in software development.");
-        const whoami2 = createTextDiv('whoami', "webapps and mobile apps are what attract me.");
+        const spacer = createSpacer('70px', '0px');
+        const whoami1 = createTextDiv('whoami', "i'm a student in software development");
+        const whoami2 = createTextDiv('whoami', "i'm also an apprentice at Ennov.");
 
         this.container.appendChild(introduction);
         this.container.appendChild(myName);
