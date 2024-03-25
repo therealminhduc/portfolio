@@ -1,3 +1,9 @@
+.technoTitle {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
 .technoGridItemContainer {
     display: grid;
     grid-template-columns: auto auto auto;

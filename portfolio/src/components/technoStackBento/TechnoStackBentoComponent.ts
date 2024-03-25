@@ -1,6 +1,11 @@
 import '../../../style.css'
 import './TechnoStackBentoComponent.css'
-import {createBentoGridItem, createContainerDiv, renderElement} from "../../common/utils/utils.ts";
+import {
+    createBentoGridItem,
+    createContainerDiv,
+    createTextDiv,
+    renderElement
+} from "../../common/utils/utils.ts";
 import {technoData} from "../../common/data/technoData.ts";
 
 export class TechnoStackBentoComponent {
@@ -8,6 +13,10 @@ export class TechnoStackBentoComponent {
 
     constructor() {
         this.container = createContainerDiv('technoStackBentoContainer');
+
+        const title = createTextDiv("technoTitle", "Technologies");
+
+        this.container.appendChild(title);
         this.addItem();
     }
 

@@ -1,3 +1,9 @@
+.projectTitle {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
 .projectsGridItemContainer {
     display: grid;
     grid-template-columns: auto auto auto;

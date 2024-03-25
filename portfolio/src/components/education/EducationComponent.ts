@@ -1,4 +1,4 @@
-import {createContainerDiv, createSpacer, createTextDiv, renderElement} from "../../common/utils/utils.ts";
+import {createContainerDiv, createTextDiv, renderElement} from "../../common/utils/utils.ts";
 import './EducationComponent.css';
 import {educationData} from "../../common/data/educationData.ts";
 
@@ -8,12 +8,12 @@ export class EducationComponent {
     constructor() {
         this.container = createContainerDiv('education');
 
-        const spacer = createSpacer('100px', '0px');
+        // const spacer = createSpacer('0px', '0px');
 
         const horizontalBar = document.createElement('hr');
         horizontalBar.className = 'horizontalbar';
 
-        this.container.appendChild(spacer);
+        // this.container.appendChild(spacer);
         this.container.appendChild(horizontalBar);
 
         this.addItem();
@@ -23,8 +23,15 @@ export class EducationComponent {
         const schoolsContainer = createContainerDiv('schools');
 
         educationData.forEach((item) => {
+            const schoolWrapper = createContainerDiv('schoolWrapper');
+
             const school = createTextDiv('school', item.schoolName);
-            schoolsContainer.appendChild(school);
+            const description = createTextDiv('description', item.schoolDescription);
+
+            schoolWrapper.appendChild(school);
+            schoolWrapper.appendChild(description);
+
+            schoolsContainer.appendChild(schoolWrapper)
         });
 
         this.container.appendChild(schoolsContainer);

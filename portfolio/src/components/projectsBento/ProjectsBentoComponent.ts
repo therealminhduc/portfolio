@@ -1,6 +1,11 @@
 import '../../../style.css'
 import './ProjectsBentoComponent.css'
-import {createBentoGridItem, createContainerDiv, renderElement} from "../../common/utils/utils.ts";
+import {
+    createBentoGridItem,
+    createContainerDiv,
+    createTextDiv,
+    renderElement
+} from "../../common/utils/utils.ts";
 import {projectsData} from "../../common/data/projectsData.ts";
 
 export class ProjectsBentoComponent {
@@ -9,6 +14,9 @@ export class ProjectsBentoComponent {
     constructor() {
         this.container = createContainerDiv('projectsBentoContainer');
 
+        const title = createTextDiv("projectTitle", "Projects");
+
+        this.container.appendChild(title);
         this.addItem();
     }
 
