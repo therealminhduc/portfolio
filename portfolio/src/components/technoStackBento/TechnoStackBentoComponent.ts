@@ -1,8 +1,9 @@
 import '../../../style.css'
 import './TechnoStackBentoComponent.css'
+import '../../common/modal/Modal.css'
 import {
     createBentoGridItem,
-    createContainerDiv,
+    createContainerDiv, createModal,
     createTextDiv,
     renderElement
 } from "../../common/utils/utils.ts";
@@ -27,6 +28,12 @@ export class TechnoStackBentoComponent {
             // const gridItem = createBentoGridItem('gridItem', '', item.imageSource);
             const gridItem = createBentoGridItem('technoGridItem', '', '');
             const overlay = createBentoGridItem('technoOverlay', item.title, '');
+
+            gridItem.addEventListener('click', () => {
+                const modal = createModal("technoModal", item.title, "string");
+                document.body.appendChild(modal);
+                modal.style.display = 'block';
+            })
 
             gridItem.appendChild(overlay);
 

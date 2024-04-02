@@ -36,6 +36,36 @@ export function createSpacer(height: string, width: string): HTMLDivElement {
     return spacer;
 }
 
+export function createModal(className: string, title: string, content: string) {
+    const modalContainer = createContainerDiv('modal');
+    modalContainer.className = className;
+    modalContainer.style.display = 'hidden';
+
+    const modalContent = createContainerDiv('modal-content');
+
+    const closeButton = createButton("close", "x");
+    closeButton.addEventListener('click', () => closeModal(modalContainer));
+
+    const modalTitle = createTextDiv('modal-title', title);
+    const modalBody = createTextDiv('modal-body', content);
+
+    modalContent.appendChild(closeButton);
+    modalContent.appendChild(modalTitle);
+    modalContent.appendChild(modalBody);
+
+    modalContainer.appendChild(modalContent);
+
+    return modalContainer;
+}
+
 export function renderElement(element: HTMLElement, parentElement: HTMLElement): void {
     parentElement.appendChild(element);
+}
+
+export function openModal(modal: HTMLElement){
+    modal.style.display = 'block';
+}
+
+export function closeModal(modal: HTMLElement){
+    modal.remove();
 }
