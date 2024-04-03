@@ -1,26 +1,26 @@
 export const technoData = [
     {
-        title: 'Techno 1',
-        imageSource: '../../assets/img/blank_profile.jpg'
+        title: 'Java',
+        imageSource: '../../assets/img/logos/java-logo.png'
     },
     {
-        title: 'Techno 2',
-        imageSource: '../../assets/img/blank_profile.jpg'
+        title: 'TypeScript',
+        imageSource: '../../assets/img/logos/ts-logo.png'
     },
     {
-        title: 'Techno 3',
-        imageSource: '../../assets/img/blank_profile.jpg'
+        title: 'Kotlin',
+        imageSource: '../../assets/img/logos/kotlin-logo.png'
     },
     {
-        title: 'Techno 4',
-        imageSource: '../../assets/img/jobboard.png'
+        title: 'Swift',
+        imageSource: '../../assets/img/logos/swift-logo.png'
     },
     {
-        title: 'Techno 5',
-        imageSource: '../../assets/img/blank_profile.jpg'
+        title: 'Angular',
+        imageSource: '../../assets/img/logos/angular-logo.png'
     },
     {
-        title: 'Techno 6',
-        imageSource: '../../assets/img/blank_profile.jpg'
+        title: 'Valorant',
+        imageSource: '../../assets/img/logos/valorant-logo.png'
     },
 ];

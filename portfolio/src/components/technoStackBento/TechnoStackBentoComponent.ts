@@ -26,7 +26,7 @@ export class TechnoStackBentoComponent {
 
         technoData.forEach((item) => {
             // const gridItem = createBentoGridItem('gridItem', '', item.imageSource);
-            const gridItem = createBentoGridItem('technoGridItem', '', '');
+            const gridItem = createBentoGridItem('technoGridItem', '', item.imageSource);
             const overlay = createBentoGridItem('technoOverlay', item.title, '');
 
             gridItem.appendChild(overlay);

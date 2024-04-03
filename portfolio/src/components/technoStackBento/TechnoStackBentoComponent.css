@@ -17,10 +17,12 @@
     position: relative;
     height: 250px;
     width: 250px;
-    background-color: sienna;
+    /*background-color: sienna;*/
     border-radius: 7px;
     margin: 5px;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
 .technoOverlay {
