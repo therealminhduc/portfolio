@@ -2,7 +2,7 @@ import '../../../style.css'
 import './ProjectsBentoComponent.css'
 import {
     createBentoGridItem,
-    createContainerDiv,
+    createContainerDiv, createModal,
     createTextDiv,
     renderElement
 } from "../../common/utils/utils.ts";
@@ -27,6 +27,12 @@ export class ProjectsBentoComponent {
             // const gridItem = createBentoGridItem('gridItem', '', item.imageSource);
             const gridItem = createBentoGridItem('projectGridItem', '', '');
             const overlay = createBentoGridItem('projectOverlay', item.title, '');
+
+            gridItem.addEventListener('click', () => {
+                const modal = createModal("technoModal", item.title, "string");
+                document.body.appendChild(modal);
+                modal.style.display = 'block';
+            })
 
             gridItem.appendChild(overlay);
 

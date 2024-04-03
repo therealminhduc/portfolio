@@ -8,14 +8,6 @@ export class EducationComponent {
     constructor() {
         this.container = createContainerDiv('education');
 
-        // const spacer = createSpacer('0px', '0px');
-
-        const horizontalBar = document.createElement('hr');
-        horizontalBar.className = 'horizontalbar';
-
-        // this.container.appendChild(spacer);
-        this.container.appendChild(horizontalBar);
-
         this.addItem();
     }
 
@@ -26,7 +18,7 @@ export class EducationComponent {
             const schoolWrapper = createContainerDiv('schoolWrapper');
 
             const school = createTextDiv('school', item.schoolName);
-            const description = createTextDiv('description', item.schoolDescription);
+            const description = createTextDiv('description', item.years);
 
             schoolWrapper.appendChild(school);
             schoolWrapper.appendChild(description);

@@ -1,14 +1,17 @@
 export const educationData = [
     {
         schoolName: 'Lycée français Alexandre Yersin',
-        schoolDescription: 'desscccccdesscccccdesscccccdesscccccdessccccc'
+        years: '2017 - 2020',
+        imageSource: ''
     },
     {
         schoolName: 'IUT de Vélizy',
-        schoolDescription: 'desscccccdesscccccdesscccccdesscccccdessccccc'
+        years: '2020 - 2022',
+        imageSource: ''
     },
     {
         schoolName: 'Epitech',
-        schoolDescription: 'desscccccdesscccccdesscccccdesscccccdessccccc'
+        years: '2023 - now',
+        imageSource: ''
     }
 ]

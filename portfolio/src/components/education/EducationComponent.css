@@ -1,23 +1,17 @@
 .education {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+
 }
 
-.horizontalbar {
-    width: 85%;
-    color: yellow;
-}
 
 .schools {
+    padding: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
-    margin-top: 20px;
+    align-items: center;
+    bottom: 0;
 }
 
 .school {
-    text-align: center;
+
 }

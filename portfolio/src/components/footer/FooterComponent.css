@@ -3,13 +3,17 @@
 }
 
 .footer {
-    background-color: #282833;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 20px;
+    height: 100px;
+    padding: 100px;
+    /*margin: 15px;*/
+    /*border-radius: 20px;*/
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
+}
+
+.footer-content {
 }
