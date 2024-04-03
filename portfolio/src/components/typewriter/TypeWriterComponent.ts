@@ -15,7 +15,7 @@ export class TypeWriterComponent {
         const myName = createTextDiv('myName', "i'm minhduc.");
         const spacer = createSpacer('70px', '0px');
         const whoami1 = createTextDiv('whoami', "i'm a student in software development,");
-        const whoami2 = createTextDiv('whoami', "currently R&D apprentice at Ennov.");
+        const whoami2 = createTextDiv('whoami', "currently R&D engineer apprentice at Ennov.");
 
         this.container.appendChild(introduction);
         this.container.appendChild(myName);

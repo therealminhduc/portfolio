@@ -15,14 +15,18 @@ export class HeaderComponent {
 
         titleContainer.appendChild(titleButton)
 
-        /// Buttons (About me & CV)
         const buttonsContainer = document.createElement('div');
 
+        /// Buttons (About me & CV)
         const aboutMeButton = createButton('button', 'About me');
         const cvButton = createButton('button', 'CV');
 
+        /// Dark & light mode
+        const darkLight = createButton('button', 'Dark/Light');
+
         buttonsContainer.appendChild(aboutMeButton);
         buttonsContainer.appendChild(cvButton);
+        buttonsContainer.appendChild(darkLight);
 
         /// Add elements to the DOM
         this.container.appendChild(titleContainer);
