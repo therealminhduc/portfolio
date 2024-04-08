@@ -30,7 +30,7 @@ export class ProjectsBentoComponent {
 
             gridItem.addEventListener('click', () => {
                 const modal = createModal("technoModal", item.title, "string");
-                document.body.appendChild(modal);
+                gridItemContainer.appendChild(modal);
                 modal.style.display = 'block';
             })
 

@@ -43,11 +43,12 @@ export function createModal(className: string, title: string, content: string) {
 
     const modalContent = createContainerDiv('modal-content');
 
-    const closeButton = createButton("close", "x");
+    const closeButton = createButton("close", "Dismiss");
     closeButton.addEventListener('click', () => closeModal(modalContainer));
 
     const modalTitle = createTextDiv('modal-title', title);
     const modalBody = createTextDiv('modal-body', content);
+    modalContent.classList.add("active");
 
     modalContent.appendChild(closeButton);
     modalContent.appendChild(modalTitle);
@@ -67,5 +68,6 @@ export function openModal(modal: HTMLElement){
 }
 
 export function closeModal(modal: HTMLElement){
+    modal.classList.remove("active");
     modal.remove();
 }
