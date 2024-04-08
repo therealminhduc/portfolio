@@ -1,21 +1,21 @@
-* {
-    color: white;
-}
+/** {*/
+/*    color: white;*/
+/*}*/
 
 .header {
-    position: fixed;
+    /*position: fixed;*/
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
+    /*width: 90%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
     padding: 25px;
-    background: rgba(40, 40, 51, 0.4);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    /*background: rgba(40, 40, 51, 0.4);*/
+    /*box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+    /*border-radius: 20px;*/
     border: 1px solid rgba(40, 40, 51, 0.18);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(8px);
+    /*backdrop-filter: blur(6px);*/
+    /*-webkit-backdrop-filter: blur(8px);*/
     z-index: 1;
 }
 
