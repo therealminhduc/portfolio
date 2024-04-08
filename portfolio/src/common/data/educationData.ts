@@ -1,17 +1,19 @@
+const basePath = '../../assets/img/schools';
+
 export const educationData = [
     {
         schoolName: 'Lycée français Alexandre Yersin',
         years: '2017 - 2020',
-        imageSource: ''
+        imageSource: `${basePath}/lfay-logo.jpeg`
     },
     {
         schoolName: 'IUT de Vélizy',
         years: '2020 - 2022',
-        imageSource: ''
+        imageSource: `${basePath}/iut-de-velizy-logo.png`
     },
     {
         schoolName: 'Epitech',
         years: '2023 - now',
-        imageSource: ''
+        imageSource: `${basePath}/epitech-logo.gif`
     }
 ]

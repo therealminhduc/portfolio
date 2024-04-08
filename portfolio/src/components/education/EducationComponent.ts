@@ -1,4 +1,4 @@
-import {createContainerDiv, createTextDiv, renderElement} from "../../common/utils/utils.ts";
+import {createBentoGridItem, createContainerDiv, createTextDiv, renderElement} from "../../common/utils/utils.ts";
 import './EducationComponent.css';
 import {educationData} from "../../common/data/educationData.ts";
 
@@ -19,9 +19,11 @@ export class EducationComponent {
 
             const school = createTextDiv('school', item.schoolName);
             const description = createTextDiv('description', item.years);
+            const gridItem = createBentoGridItem('educationGridItem', '', item.imageSource);
 
             schoolWrapper.appendChild(school);
             schoolWrapper.appendChild(description);
+            schoolWrapper.appendChild(gridItem);
 
             schoolsContainer.appendChild(schoolWrapper)
         });
