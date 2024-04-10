@@ -23,10 +23,13 @@
 .educationGridItem {
     position: relative;
     height: 150px;
-    width: 500px;
+    width: 300px;
     border-radius: 7px;
-    margin: 5px;
+    margin-top: 10px;
     overflow: hidden;
-    background-size: cover;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+    border: 2px solid red;
 }

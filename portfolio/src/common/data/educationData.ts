@@ -4,7 +4,7 @@ export const educationData = [
     {
         schoolName: 'Lycée français Alexandre Yersin',
         years: '2017 - 2020',
-        imageSource: `${basePath}/lfay-logo.jpeg`
+        imageSource: `${basePath}/lfay-logo.png`
     },
     {
         schoolName: 'IUT de Vélizy',

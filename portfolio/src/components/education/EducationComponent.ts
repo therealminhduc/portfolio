@@ -13,7 +13,7 @@ export class EducationComponent {
 
     private addItem() {
         const schoolsContainer = createContainerDiv('schools');
-
+        
         educationData.forEach((item) => {
             const schoolWrapper = createContainerDiv('schoolWrapper');
 
