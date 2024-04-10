@@ -1,6 +1,7 @@
 import '../../../style.css'
 import './HeaderComponent.css'
 import {createButton, createContainerDiv, renderElement} from "../../common/utils/utils.ts";
+import {socialData} from "../../common/data/socialData.ts";
 
 export class HeaderComponent {
     private readonly container: HTMLDivElement;
@@ -8,6 +9,11 @@ export class HeaderComponent {
     constructor() {
         this.container = createContainerDiv('header');
 
+        this.addItem();
+    }
+
+
+    private addItem(){
         /// Title (mynkie)
         const titleContainer = document.createElement('div');
 
@@ -17,15 +23,21 @@ export class HeaderComponent {
 
         const buttonsContainer = document.createElement('div');
 
-        /// Buttons (About me & CV)
-        const aboutMeButton = createButton('button', 'About me');
-        const cvButton = createButton('button', 'CV');
+        // Buttons (About me & CV)
+        socialData.forEach((item) => {
+            const socialButton = createButton('button', item.title);
+
+            socialButton.addEventListener('click', () => {
+                window.open(item.link);
+            });
+
+            buttonsContainer.appendChild(socialButton);
+        });
 
         /// Dark & light mode
         const darkLight = createButton('button', 'Dark/Light');
 
-        buttonsContainer.appendChild(aboutMeButton);
-        buttonsContainer.appendChild(cvButton);
+
         buttonsContainer.appendChild(darkLight);
 
         /// Add elements to the DOM

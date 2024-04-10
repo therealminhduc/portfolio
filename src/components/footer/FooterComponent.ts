@@ -1,6 +1,7 @@
 import '../../../style.css'
 import './FooterComponent.css'
 import {createButton, createContainerDiv, createTextDiv, renderElement} from "../../common/utils/utils.ts";
+import {socialData} from "../../common/data/socialData.ts";
 
 export class FooterComponent {
     private readonly container: HTMLDivElement;
@@ -16,13 +17,20 @@ export class FooterComponent {
         const mynkie = createTextDiv('mynkie', '@2024 mynkie');
 
         /// Social media buttons
-        const gitHubButton = createButton('button', 'GitHub');
-        const linkedInButton = createButton('button', 'LinkedIn');
+        // const gitHubButton = createButton('button', 'GitHub');
+        // const linkedInButton = createButton('button', 'LinkedIn');
 
         trademark.appendChild(mynkie);
 
-        socialContainer.appendChild(gitHubButton);
-        socialContainer.appendChild(linkedInButton);
+        socialData.forEach((item) => {
+            const socialButton = createButton('button', item.title);
+
+            socialButton.addEventListener('click', () => {
+                window.open(item.link);
+            });
+
+            socialContainer.appendChild(socialButton);
+        });
 
         /// Add elements to the DOM
         this.container.appendChild(trademark);
