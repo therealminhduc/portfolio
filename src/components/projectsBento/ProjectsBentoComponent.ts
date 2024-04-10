@@ -25,7 +25,7 @@ export class ProjectsBentoComponent {
 
         projectsData.forEach((item, i) => {
             // const gridItem = createBentoGridItem('gridItem', '', item.imageSource);
-            const gridItem = createBentoGridItem('projectGridItem', '', '');
+            const gridItem = createBentoGridItem('projectGridItem', '', item.imageSource);
             const overlay = createBentoGridItem('projectOverlay', item.title, '');
 
             gridItem.addEventListener('click', () => {

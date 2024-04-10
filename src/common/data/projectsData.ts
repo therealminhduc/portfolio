@@ -1,30 +1,32 @@
+const basePath = '../../assets/img/projects'
+
 export const projectsData = [
     {
-        title: 'Title 1',
-        imageSource: '../../assets/img/blank_profile.jpg'
+        title: 'Personal Dashboard',
+        imageSource: `${basePath}/dashboard.PNG`
     },
     {
-        title: 'Title 2',
-        imageSource: '../../assets/img/blank_profile.jpg'
+        title: 'ForHelp',
+        imageSource: `${basePath}/forhelp.PNG`
     },
     {
-        title: 'Title 3',
-        imageSource: '../../assets/img/blank_profile.jpg'
+        title: 'JobBoard',
+        imageSource: `${basePath}/jobboard.png`
     },
     {
-        title: 'Title 4',
-        imageSource: '../../assets/img/jobboard.png'
+        title: 'Linktree',
+        imageSource: `${basePath}/linktree.png`
     },
     {
-        title: 'Title 5',
-        imageSource: '../../assets/img/blank_profile.jpg'
+        title: 'Cash manager',
+        imageSource: `${basePath}/cashmanager.png`
     },
     {
         title: 'Title 6',
-        imageSource: '../../assets/img/blank_profile.jpg'
+        imageSource: `${basePath}/`
     },
     {
         title: 'Title 7',
-        imageSource: '../../assets/img/jobboard.png'
+        imageSource: `${basePath}/`
     },
 ];
