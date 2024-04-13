@@ -39,7 +39,6 @@ export function createSpacer(height: string, width: string): HTMLDivElement {
 export function createModal(className: string, title: string, content: string) {
     const modalContainer = createContainerDiv('modal');
     modalContainer.className = className;
-    modalContainer.style.display = 'hidden';
 
     const modalContent = createContainerDiv('modal-content');
 
@@ -48,7 +47,6 @@ export function createModal(className: string, title: string, content: string) {
 
     const modalTitle = createTextDiv('modal-title', title);
     const modalBody = createTextDiv('modal-body', content);
-    modalContent.classList.add("active");
 
     modalContent.appendChild(closeButton);
     modalContent.appendChild(modalTitle);
